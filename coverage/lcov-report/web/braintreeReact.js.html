@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for web/braintreeReact.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\prettify.css" />
+    <link rel="stylesheet" href="..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\index.html">All files</a> / <a href="index.html">web</a> braintreeReact.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">35.71% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>15/42</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">29.41% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">35.71% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>15/42</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// download and use react an react-dom from local directory
+// to avoid conflicts with Expo version of react
+import React from "react";
+&nbsp;
+import renderIf from "render-if";
+import dropin from "braintree-web-drop-in";
+import glamorous from "glamorous";
+import RNMessageChannel from "react-native-webview-messaging";
+const util = require("util");
+&nbsp;
+const DropInContainer = glamorous.div({
+  flex: 1
+});
+const ButtonContainer = glamorous.div({
+  flex: 1
+});
+const Button = glamorous.div({
+  borderRadius: "2px",
+  padding: "2px 10px 2px 10px",
+  backgroundColor: "#2ecc71",
+  fontSize: "1.25em",
+  color: "white",
+  fontFamily: "arial",
+  boxShadow: "0 1px 4px rgba(0, 0, 0, .6)",
+  textAlign: "center"
+});
+const PaymentBackground = glamorous.div({
+  position: "absolute",
+  top: 0,
+  bottom: 0,
+  left: 0,
+  right: 0,
+  display: "flex",
+  flexDirection: "column"
+});
+&nbsp;
+// print passed information in an html element; useful for debugging
+// since console.log and debug statements won't work in a conventional way
+const PrintElement = <span class="fstat-no" title="function not covered" >da</span>ta =&gt; {
+<span class="cstat-no" title="statement not covered" >  if (typeof data === "object") {</span>
+    let el = <span class="cstat-no" title="statement not covered" >document.createElement("pre");</span>
+<span class="cstat-no" title="statement not covered" >    el.innerHTML = util.inspect(data, { showHidden: false, depth: null });</span>
+<span class="cstat-no" title="statement not covered" >    document.getElementById("messages").appendChild(el);</span>
+  } else <span class="cstat-no" title="statement not covered" >if (typeof data === "string") {</span>
+    let el = <span class="cstat-no" title="statement not covered" >document.createElement("pre");</span>
+<span class="cstat-no" title="statement not covered" >    el.innerHTML = data;</span>
+<span class="cstat-no" title="statement not covered" >    document.getElementById("messages").appendChild(el);</span>
+  }
+};
+&nbsp;
+export default class BraintreeReact extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      currentPaymentStatus: null
+    };
+  }
+&nbsp;
+  componentDidMount = () =&gt; {
+    // PrintElement("componentDidMount success");
+    this.registerMessageListeners();
+  };
+&nbsp;
+  /*******************************
+   * register message listeners to receive events from parent
+  */
+  registerMessageListeners = () =&gt; {
+    // PrintElement("registering message listeners");
+&nbsp;
+    // will receive client token as a prop immediately upon mounting
+    RNMessageChannel.on("TOKEN_RECEIVED", <span class="fstat-no" title="function not covered" >ev</span>ent =&gt; {
+      //PrintElement(event);
+<span class="cstat-no" title="statement not covered" >      if (event.payload.options.creditCard) {</span>
+<span class="cstat-no" title="statement not covered" >        this.createCreditCardUI(event.payload.clientToken);</span>
+      }
+<span class="cstat-no" title="statement not covered" >      if (event.payload.options.paypal) {</span>
+<span class="cstat-no" title="statement not covered" >        this.createPaypalUI(event.payload.clientToken);</span>
+      }
+    });
+&nbsp;
+    // when the call is made to the braintree purchasing server
+    // used to show the user some feedback that the purchase is in process
+    RNMessageChannel.on("PURCHASE_PENDING", <span class="fstat-no" title="function not covered" >ev</span>ent =&gt; {
+      // PrintElement("PURCHASE_PENDING");
+<span class="cstat-no" title="statement not covered" >      this.setState({ currentPaymentStatus: "PURCHASE_FULFILLED" });</span>
+    });
+&nbsp;
+    // when the purchase succeeds
+    // used to show the user some feedback that the purchase has completed successfully
+    RNMessageChannel.on("PURCHASE_FULFILLED", <span class="fstat-no" title="function not covered" >ev</span>ent =&gt; {
+      //PrintElement("PURCHASE_FULFILLED");
+<span class="cstat-no" title="statement not covered" >      this.setState({ currentPaymentStatus: "PURCHASE_FULFILLED" });</span>
+    });
+&nbsp;
+    // when the purchase succeeds
+    // used to show the user some feedback that the purchase has failed to complete
+    RNMessageChannel.on("PURCHASE_REJECTED", <span class="fstat-no" title="function not covered" >ev</span>ent =&gt; {
+<span class="cstat-no" title="statement not covered" >      this.setState({ currentPaymentStatus: "PURCHASE_REJECTED" });</span>
+<span class="cstat-no" title="statement not covered" >      PrintElement("PURCHASE_REJECTED");</span>
+    });
+&nbsp;
+    // PrintElement("registering message listeners - completed");
+  };
+&nbsp;
+  /*******************************
+   * create the Paypal payment UI element
+  */
+  createPaypalUI = <span class="fstat-no" title="function not covered" >cl</span>ientToken =&gt; {
+<span class="cstat-no" title="statement not covered" >    console.log("Not implmented");</span>
+  };
+&nbsp;
+  /*******************************
+   * create the Braintree UI element
+  */
+  createCreditCardUI = <span class="fstat-no" title="function not covered" >cl</span>ientToken =&gt; {
+    //PrintElement(`createCreditCardUI: ${clientToken}`);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    dropin</span>
+      .create({
+        authorization: clientToken,
+        container: "#dropin-container"
+      })
+      .then(<span class="fstat-no" title="function not covered" >in</span>stance =&gt; {
+<span class="cstat-no" title="statement not covered" >        this.setState({ instance });</span>
+      })
+      .catch(<span class="fstat-no" title="function not covered" >fu</span>nction(err) {
+        // Handle any errors that might've occurred when creating Drop-in
+<span class="cstat-no" title="statement not covered" >        RNMessageChannel.sendJSON({</span>
+          type: "error",
+          err
+        });
+      });
+  };
+  /***********************************************
+  *  handler for when the purchase button is clicke
+  */
+  handleSubmitPurchaseButtonClicked = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+    // PrintElement(`handleSubmitPurchaseButtonClicked: ${this.state.instance}`);
+<span class="cstat-no" title="statement not covered" >    this.setState({ currentPaymentStatus: "PAYMENT_PENDING" });</span>
+&nbsp;
+    // send a message to the parent WebView so that it
+    // can display feedback to user
+<span class="cstat-no" title="statement not covered" >    RNMessageChannel.emit("RETRIEVE_NONCE_PENDING", {</span>
+      payload: {
+        type: "success"
+      }
+    });
+&nbsp;
+    // request a purchase nonce from the Braintree server
+<span class="cstat-no" title="statement not covered" >    this.state.instance.requestPaymentMethod(<span class="fstat-no" title="function not covered" >fu</span>nction(err, response) {</span>
+<span class="cstat-no" title="statement not covered" >      if (err) {</span>
+        // notify the parent WebView if there is an error
+<span class="cstat-no" title="statement not covered" >        RNMessageChannel.emit("RETRIEVE_NONCE_REJECTED", {</span>
+          payload: {
+            type: "error",
+            err
+          }
+        });
+      } else {
+        // pass the nonce to the parent WebView if the purchase is successful
+<span class="cstat-no" title="statement not covered" >        RNMessageChannel.emit("RETRIEVE_NONCE_FULFILLED", {</span>
+          payload: {
+            type: "success",
+            response
+          }
+        });
+      }
+    });
+  };
+&nbsp;
+  handleGoBackButtonSubmit = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    RNMessageChannel.emit("GO_BACK");</span>
+  };
+&nbsp;
+  render = () =&gt; {
+    return (
+      &lt;PaymentBackground
+        ref={component =&gt; {
+          this.webComponent = component;
+        }}
+      &gt;
+        &lt;DropInContainer&gt;
+          &lt;div id="dropin-container" /&gt;
+        &lt;/DropInContainer&gt;
+        &lt;ButtonContainer&gt;
+          {renderIf(this.state.currentPaymentStatus === null)(
+            &lt;Button
+              id="submit-button"
+              onClick={this.handleSubmitPurchaseButtonClicked}
+            &gt;
+              Submit Purchase
+            &lt;/Button&gt;
+          )}
+          {renderIf(this.state.currentPaymentStatus === "PURCHASE_FULFILLED")(
+            &lt;div&gt;
+              &lt;div&gt;Thank you for your purchase! &lt;/div&gt;
+              &lt;Button onClick={this.handleGoBackButtonSubmit}&gt;
+                Return to Shop
+              &lt;/Button&gt;
+            &lt;/div&gt;
+          )}
+          {renderIf(this.state.currentPaymentStatus === "PURCHASE_REJECTED")(
+            &lt;div&gt;
+              &lt;div&gt;
+                There was a problem with your purchase, please try again
+              &lt;/div&gt;
+              &lt;Button onClick={this.handleGoBackButtonSubmit}&gt;
+                Return to Shop
+              &lt;/Button&gt;
+            &lt;/div&gt;
+          )}
+          &lt;div id="messages" /&gt;
+        &lt;/ButtonContainer&gt;
+      &lt;/PaymentBackground&gt;
+    );
+  };
+}
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Oct 07 2017 21:22:36 GMT-0400 (Eastern Daylight Time)
+</div>
+</div>
+<script src="..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\sorter.js"></script>
+</body>
+</html>
