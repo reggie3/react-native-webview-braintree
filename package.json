@@ -1,7 +1,6 @@
 {
   "name": "react-native-webview-braintree",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.2",
   "devDependencies": {
     "babel-jest": "^21.2.0",
     "babel-loader": "^7.1.2",
@@ -41,7 +40,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-native": "^0.48.4",
-    "react-native-webview-messaging": "^1.1.0",
+    "react-native-webview-messaging": "1.2.1",
     "render-if": "^0.1.1",
     "util": "^0.10.3"
   },

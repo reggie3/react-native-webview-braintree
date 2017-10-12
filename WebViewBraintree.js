@@ -18,6 +18,7 @@ export default class BraintreePaymentWebview extends React.Component {
     // register listeners to listen for events from the html
     // we'll receive a nonce once the requestPaymentMethodComplete is completed
     this.registerMessageListeners();
+    console.log('wbvw braintree mounted');
   }
 
   registerMessageListeners = () => {
@@ -92,7 +93,7 @@ export default class BraintreePaymentWebview extends React.Component {
         >
           <WebView
             onLoad={this.sendClientTokenToHTML}
-            source={require('../dist/index.html')}
+            source={require('./dist/index.html')}
             style={{ flex: 1 }}
             ref={component => (this.webview = component)}
           />
