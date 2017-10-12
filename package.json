@@ -6,8 +6,9 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    
+    "babel-preset-stage-0": "^6.24.1",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.0.1",
     "enzyme-to-json": "^3.1.2",
@@ -41,9 +42,7 @@
     "react-native": "^0.48.4",
     "react-native-webview-messaging": "1.2.1",
     "render-if": "^0.1.1",
-    "util": "^0.10.3",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1"
+    "util": "^0.10.3"
   },
   "description": "A React Native component for making payments using Braintree that uses no native code, only JavaScript.",
   "repository": {
