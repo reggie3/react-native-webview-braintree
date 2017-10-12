@@ -43,3 +43,7 @@ brainTreeUtils
         }
 });
 ~~~
+
+## LICENSE
+
+MIT
