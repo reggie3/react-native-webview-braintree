@@ -1,6 +1,6 @@
 {
   "name": "react-native-webview-braintree",
-  "version": "0.0.211",
+  "version": "0.0.3",
   "devDependencies": {
     "babel-jest": "^21.2.0",
     "babel-loader": "^7.1.2",
@@ -32,9 +32,6 @@
       "<rootDir>/config/enzymeAdapter.js"
     ]
   },
-  "bundledDependencies":[
-        "react-native"
-  ],
   "dependencies": {
     "braintree-web-drop-in": "^1.8.0",
     "glamor": "^2.20.40",

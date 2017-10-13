@@ -66,12 +66,12 @@ export default class BraintreeReactHTML extends React.Component {
     // will receive client token as a prop immediately upon mounting
     RNMessageChannel.on("TOKEN_RECEIVED", event => {
       //PrintElement(event);
-      if (event.payload.options.creditCard) {
+      // if (event.payload.options.creditCard) {
         this.createCreditCardUI(event.payload.clientToken);
-      }
+     /*  }
       if (event.payload.options.paypal) {
         this.createPaypalUI(event.payload.clientToken);
-      }
+      } */
     });
 
     // when the call is made to the braintree purchasing server
