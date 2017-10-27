@@ -1,4 +1,4 @@
-import React from 'react';
+import React from './react.production.min.js';
 import { View, ActivityIndicator, StyleSheet } from 'react-native';
 import { WebView } from 'react-native-webview-messaging/WebView';
 import PropTypes from 'prop-types';

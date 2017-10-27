@@ -1,4 +1,4 @@
-import React from 'react';
+import React from '../react.production.min.js';
 import BraintreeReactHTML from './braintreeReactHTML.js';
 import { shallow, mount } from 'enzyme';
 

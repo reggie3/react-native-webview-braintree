@@ -1,6 +1,6 @@
 {
   "name": "react-native-webview-braintree",
-  "version": "0.0.3",
+  "version": "0.0.34",
   "devDependencies": {
     "babel-jest": "^21.2.0",
     "babel-loader": "^7.1.2",
@@ -21,24 +21,31 @@
   },
   "files": [
     "dist",
-    "WebViewBraintree.js"
+    "WebViewBraintree.js",
+    "react.production.min.js",
+    "react-dom.production.min"
   ],
   "main": "./WebViewBraintree.js",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "build": "webpack --progress"
   },
   "jest": {
     "setupFiles": [
       "<rootDir>/config/enzymeAdapter.js"
     ]
   },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
   "dependencies": {
     "braintree-web-drop-in": "^1.8.0",
     "glamor": "^2.20.40",
     "glamorous": "^4.9.7",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-native": "^0.49.3",
     "react-native-webview-messaging": "1.2.1",
     "render-if": "^0.1.1",
     "util": "^0.10.3"
@@ -50,7 +57,7 @@
   },
   "keywords": [
     "react-native",
-    "braintreeyaREN",
+    "braintree",
     "expo",
     "webview"
   ],

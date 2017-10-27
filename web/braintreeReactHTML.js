@@ -2,7 +2,9 @@ import renderIf from "render-if";
 import dropin from "braintree-web-drop-in";
 import glamorous from "glamorous";
 import RNMessageChannel from "react-native-webview-messaging";
-import React, { PropTypes } from 'react';const util = require("util");
+import React from '../react.production.min.js';
+import PropTypes from 'prop-types';
+const util = require("util");
 
 const DropInContainer = glamorous.div({
   flex: 1
