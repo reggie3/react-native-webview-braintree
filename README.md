@@ -6,7 +6,7 @@
 [![npm](https://img.shields.io/npm/dt/react-native-webview-braintree.svg)](https://www.npmjs.com/package/react-native-webview-braintree)
 [![npm](https://img.shields.io/npm/l/react-native-webview-braintree.svg)](https://github.com/react-native-component/react-native-webview-braintree/blob/master/LICENSE)
 
-Usage
+## Usage
 ~~~~
 <WebViewBraintree
     clientToken={this.state.clientToken}
