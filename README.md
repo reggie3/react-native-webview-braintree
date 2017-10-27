@@ -1,5 +1,5 @@
-## React Native Webview Braintree
-# A Braintree payment component with no native code for React Native apps.
+# React Native Webview Braintree
+## A Braintree payment component with no native code for React Native apps.
 
 [![npm](https://img.shields.io/npm/v/react-native-webview-braintreee.svg)](https://www.npmjs.com/package/react-native-webview-braintree)
 [![npm](https://img.shields.io/npm/dm/react-native-webview-braintree.svg)](https://www.npmjs.com/package/react-native-webview-braintree)
