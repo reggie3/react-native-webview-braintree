@@ -2,7 +2,7 @@ import React from '../react.production.min.js';
 import BraintreeReactHTML from './braintreeReactHTML.js';
 import { shallow, mount } from 'enzyme';
 
-describe('<BraintreeReactHTMLw/>', () => {
+describe('<BraintreeReactHTML/>', () => {
   it('renders without crashing', () => {
     const component = shallow(<BraintreeReactHTML />);
     expect(component).toHaveLength(1);
