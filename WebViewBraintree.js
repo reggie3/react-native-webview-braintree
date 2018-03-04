@@ -98,6 +98,7 @@ export default class BraintreePaymentWebview extends React.Component {
             source={require('./dist/index.html')}
             style={{ flex: 1 }}
             ref={component => (this.webview = component)}
+            scalesPageToFit ={false}
           />
         </View>
         {renderIf(this.state.showGetNonceActivityIndicator)(
