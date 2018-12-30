@@ -90,7 +90,8 @@ export default class BraintreePaymentWebview extends React.Component {
         <View
           style={{
             flex: 1,
-            backgroundColor: 'blue'
+            backgroundColor: 'blue',
+            overflow: 'hidden'
           }}
         >
           <WebView
