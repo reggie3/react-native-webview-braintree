@@ -25,7 +25,7 @@ This component accepts the following props
 | Name                   | Required      | Description |
 | ---------------------- | ------------- | ----------- |
 | clientToken            |    yes        | Braintree [client token used to create the dropin UI](https://developers.braintreepayments.com/start/hello-client/javascript/v3#get-a-client-token)|
-| nonceObtainedCallback  |    yes        | Function called once a Braintree payment nonce is obtained, the nonce value is passed to ehe function as the only parameter|
+| nonceObtainedCallback  |    yes        | Function called once a Braintree payment nonce is obtained, the nonce value is passed to the function as the only parameter|
 | paymentAPIResponse     |    yes        | A string indicated the success of the an API to Braintree transaction API.  The string should be either "PAYMENT_SUCCESS" "PAYMENT_REJECTED"|
 | navigationBackCallback |    no         | Function that can be called in order to initiate navigation.  This function will be called when the user clicks on a button labeled "Return to Shop" that appears after a rejected or successful purchase |
 
